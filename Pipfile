@@ -11,6 +11,8 @@ test-list = "pytest -s -v"
 [packages]
 sqlalchemy = "*"
 pytest = "*"
+pylint = "*"
+pre-commit = "*"
 
 [dev-packages]
 
