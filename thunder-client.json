@@ -1,0 +1,128 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "nlw_15_python_pass-in",
+    "collectionId": "58f0b4d5-6758-4cb2-bc5a-df4cb7885278",
+    "dateExported": "2024-04-29T12:37:14.994Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0b4a917b-e2b5-47df-90b0-0de8dfb3467b",
+            "colId": "58f0b4d5-6758-4cb2-bc5a-df4cb7885278",
+            "containerId": "",
+            "name": "create event",
+            "url": "http://localhost:3000/events",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-29T02:29:11.008Z",
+            "modified": "2024-04-29T12:27:07.015Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"test api\",\n  \"details\": \"some detail\",\n  \"slug\": \"Rocketseat Education\",\n  \"maximum_attendess\": 30 \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a2438145-d139-4128-9704-1d8e42562da8",
+            "colId": "58f0b4d5-6758-4cb2-bc5a-df4cb7885278",
+            "containerId": "",
+            "name": "list event by id",
+            "url": "http://localhost:3000/events/{event_id}",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-29T10:14:09.286Z",
+            "modified": "2024-04-29T12:27:33.907Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "event_id",
+                    "value": "e4383f59-5ecf-404c-9a9d-1d1269b03f46",
+                    "isPath": true
+                }
+            ]
+        },
+        {
+            "_id": "8a5a83c7-1e50-42df-90a2-eabb90858ba7",
+            "colId": "58f0b4d5-6758-4cb2-bc5a-df4cb7885278",
+            "containerId": "",
+            "name": "attendees registry",
+            "url": "http://localhost:3000/events/{event_id}/register",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-04-29T10:27:50.297Z",
+            "modified": "2024-04-29T12:27:54.527Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "event_id",
+                    "value": "e4383f59-5ecf-404c-9a9d-1d1269b03f46",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Rafa Lhama\",\n  \"email\": \"meuemail@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "75ea203f-a49a-4c00-90cd-c973b8d2c4de",
+            "colId": "58f0b4d5-6758-4cb2-bc5a-df4cb7885278",
+            "containerId": "",
+            "name": "get attendees badge",
+            "url": "http://localhost:3000/attendees/{attendee_id}/badge",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-04-29T10:32:12.001Z",
+            "modified": "2024-04-29T12:36:01.480Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "attendee_id",
+                    "value": "b943550f-7f07-46da-aaa3-53b3687bea6f",
+                    "isPath": true
+                }
+            ]
+        },
+        {
+            "_id": "5335d571-5fca-4a2b-98a9-9d8bf805ad73",
+            "colId": "58f0b4d5-6758-4cb2-bc5a-df4cb7885278",
+            "containerId": "",
+            "name": "get attendees by event id",
+            "url": "http://localhost:3000/events/{event_id}/attendees",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-04-29T10:36:09.975Z",
+            "modified": "2024-04-29T12:36:26.457Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "event_id",
+                    "value": "e4383f59-5ecf-404c-9a9d-1d1269b03f46",
+                    "isPath": true
+                }
+            ]
+        },
+        {
+            "_id": "9f0c1031-c6d8-46b6-8c3f-57053f4d3c8a",
+            "colId": "58f0b4d5-6758-4cb2-bc5a-df4cb7885278",
+            "containerId": "",
+            "name": "create check-in",
+            "url": "http://localhost:3000/attendees/{attendee_id}/check-in",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-04-29T10:42:33.536Z",
+            "modified": "2024-04-29T12:36:45.638Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "attendee_id",
+                    "value": "b943550f-7f07-46da-aaa3-53b3687bea6f",
+                    "isPath": true
+                }
+            ]
+        }
+    ],
+    "ref": "QkzDxJBGFbP__KMzQ1qaon5jD7Ryk9g3NbFiM2Or_uyWNwvoAPhm0B0kS66RHeSSAqb3j1OxJTt9AOqiuV74FA"
+}
