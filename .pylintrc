@@ -7,6 +7,7 @@ disable=
       W0703, # Catching too general exception Exception
       R0903, # too-few-public-methods
 	W0719, # broad-exception-raised
+      E1102, # not-callable
       E0015, # unrecognized-option,
       W0707, # raise-missing-from
       W0719, # broad-exception-raised
