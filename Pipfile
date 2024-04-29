@@ -4,15 +4,19 @@ verify_ssl = true
 name = "pypi"
 
 [scripts]
-dev = "python case.py"
+app = "python app.py"
 test = "pytest"
 test-list = "pytest -s -v"
+lint = "pylint --rcfile=.pylintrc src/"
+lint-report = "pylint --rcfile=.pylintrc --report=y src/"
 
 [packages]
 sqlalchemy = "*"
 pytest = "*"
 pre-commit = "*"
 pylint = "*"
+flask = "*"
+flask-cors = "*"
 
 [dev-packages]
 
